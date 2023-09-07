@@ -1,0 +1,130 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --blue: hsl(245, 75%, 62%);
+}
+
+/* Order Section */
+.order {
+    height: 100vh;
+    background-color: var(--paleBlue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order .container {
+    width: 340px;
+    background-color: var(--veryPaleBlue);
+    text-align: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.order .container img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
+}
+.order .container .text {
+    padding: 22px 30px 35px 30px;
+}
+.order .container .text .title {
+    color: var(--darkBlue);
+    margin-bottom: 10px;
+}
+.order .container .text .title + p {
+    color: var(--DesaturatedBlue);
+    font-size: 14px;
+    width: 260px;
+    margin: 0 auto 30px auto;
+}
+.order .container .text .info {
+    display: flex;
+    justify-content: space-between;
+}
+.order .container .text .info img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 35px;
+}
+.order .container .text .info .plan {
+    margin: 0  0 30px -40px;
+}
+.order .container .text .info .plan h4 {
+    color: var(--darkBlue);
+}
+.order .container .text .info .plan span {
+    color: var(--DesaturatedBlue);
+}
+.order .container .text .info a {
+    color: var(--brightBlue);
+    font-weight: bold;
+    margin: 15px 0 20px 0;
+    transition: color 0.1s , text-decoration 0.1s;
+    -webkit-transition: color 0.1s , text-decoration 0.1s;
+    -moz-transition: color 0.1s , text-decoration 0.1s;
+    -ms-transition: color 0.1s , text-decoration 0.1s;
+    -o-transition: color 0.1s , text-decoration 0.1s;
+}
+.order .container .text .info a:hover {
+    color: var(--blue);
+    text-decoration: none;
+}
+.order .container .text .btn {
+    border: none;
+    width: 280px;
+    height: 40px;
+    margin: 0 auto 20px auto;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 1px 7px 10px -1px var(--DesaturatedBlue);
+    transition: background-color 0.1s;
+    -webkit-transition: background-color 0.1s;
+    -moz-transition: background-color 0.1s;
+    -ms-transition: background-color 0.1s;
+    -o-transition: background-color 0.1s;
+}
+.order .container .text .btn:hover {
+    background-color: var(--blue);
+}
+.order .container .text > a {
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+    font-weight: bold;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.order .container .text > a:hover {
+    color: var(--darkBlue);
+}
